@@ -58,7 +58,7 @@ const ViewRoute = () => {
   };
 
   return (
-    <LoadScript googleMapsApiKey="AIzaSyAQ3UAgzQuBQ_JQ4qXOYJHzPtsVqNfE3xI">
+    <LoadScript googleMapsApiKey="">//place your api key here
       <div className="view-route-container">
         <h2>Waste Collection Route</h2>
         <div className="date-filter">
