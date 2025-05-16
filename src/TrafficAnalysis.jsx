@@ -10,7 +10,7 @@ const TrafficAnalysis = () => {
   const [cityCongestionData, setCityCongestionData] = useState([]); // City-wide congestion data
   const [worstTrafficAreas, setWorstTrafficAreas] = useState([]); // Areas with the worst traffic
 
-  const tomTomApiKey = "nJmdMJA0DbdEK7jGRpdwBxMEq1al4mmo"; // Your TomTom API key
+  const tomTomApiKey = ""; // Your TomTom API key
 
   // Popular areas in Bangalore for traffic analysis
   const popularAreas = [
