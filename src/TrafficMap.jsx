@@ -97,7 +97,7 @@ const TrafficMap = () => {
   };
 
   return (
-    <LoadScript googleMapsApiKey="AIzaSyAQ3UAgzQuBQ_JQ4qXOYJHzPtsVqNfE3xI" libraries={["places"]}>
+    <LoadScript googleMapsApiKey="" libraries={["places"]}>//place your api key here
       <div className="traffic-map-container">
         <h2>Real-Time Traffic, ETA, and Route Optimization</h2>
         <p className="page-description">
