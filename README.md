@@ -171,7 +171,6 @@ Your Name - [niranjan.galla.7@gmail.com]
 
 Project Link: [https://github.com/zeusXtruealpha/Smart-City--Management] 
 ![Screenshot 2025-04-28 12 44 33 PM](https://github.com/user-attachments/assets/e4a5fa4d-7ba7-4fff-8b71-6eedb36543c3)
-![Screenshot 2025-05-03 2 51 44 PM](https://github.com/user-attachments/assets/07737455-9e04-4bae-94c8-03bdbbfeb3da)
 ![Screenshot 2025-05-03 2 58 50 PM](https://github.com/user-attachments/assets/1f16d284-5a75-4644-bf61-9c465a8364dc)
 ![Screenshot 2025-05-03 2 59 19 PM](https://github.com/user-attachments/assets/c9144c13-2e0c-4f60-94f3-b2e447d08bb0)
 ![Screenshot 2025-05-03 2 59 36 PM](https://github.com/user-attachments/assets/0f047e6e-ed72-4c99-b3c8-34986ae9f5c0)
