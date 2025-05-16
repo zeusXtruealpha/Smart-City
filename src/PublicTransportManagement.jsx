@@ -309,7 +309,7 @@ const PublicTransportManagement = () => {
 
   return (
     <LoadScript 
-      googleMapsApiKey="AIzaSyAQ3UAgzQuBQ_JQ4qXOYJHzPtsVqNfE3xI"
+      googleMapsApiKey=""//place your API key here
       onLoad={() => setMapLoaded(true)}
     >
       <div className="public-transport-container">
