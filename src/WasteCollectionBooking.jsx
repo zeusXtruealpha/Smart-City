@@ -168,7 +168,7 @@ const WasteCollectionBooking = () => {
             </button>
           </div>
           <div className="map-container">
-            <LoadScript googleMapsApiKey="AIzaSyAQ3UAgzQuBQ_JQ4qXOYJHzPtsVqNfE3xI">
+            <LoadScript googleMapsApiKey="">// place your API key here
               <GoogleMap
                 mapContainerStyle={{ width: "100%", height: "100%" }}
                 zoom={10}
