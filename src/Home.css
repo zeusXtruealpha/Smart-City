@@ -1,0 +1,144 @@
+/* Dark Grey Background */
+body {
+    background-color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Home Container - Ensures it doesn't overlap the footer */
+.home-container {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 80px; /* Space for footer */
+}
+
+/* Search Bar (Now Positioned Inside Home) */
+.search-container {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+    z-index: 10;
+}
+
+.search-form {
+    display: flex;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    outline: none;
+    border-radius: 30px 0 0 30px;
+}
+
+.search-button {
+    background: #fafbfb;
+    color: rgb(68, 65, 65);
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 0 30px 30px 0;
+    transition: 0.3s;
+}
+
+.search-button:hover {
+    background: #148f77;
+}
+
+/* Search Suggestions */
+.search-suggestions {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    width: 100%;
+    max-width: 500px;
+    z-index: 999;
+}
+
+.search-suggestions li {
+    padding: 10px;
+    cursor: pointer;
+    color: #333;
+}
+
+.search-suggestions li:hover {
+    background: #f0f0f0;
+}
+
+/* Video Background */
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Sliding Features Section */
+.sliding-banner {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    background: #1abc9c;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+}
+
+.slides {
+    display: flex;
+    width: 500%;
+    animation: slide 15s infinite linear;
+}
+
+.slide {
+    width: 20%;
+    text-align: center;
+    padding: 60px 0;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Slide Animation */
+@keyframes slide {
+    0%, 20% { transform: translateX(0); }
+    25%, 45% { transform: translateX(-20%); }
+    50%, 70% { transform: translateX(-40%); }
+    75%, 95% { transform: translateX(-60%); }
+    100% { transform: translateX(-80%); }
+}
+
+/* Page Fade-Out Animation */
+@keyframes fadeOut {
+    0% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0; transform: scale(0.95); }
+}
+
+.fade-out {
+    animation: fadeOut 0.7s ease-in-out forwards;
+}

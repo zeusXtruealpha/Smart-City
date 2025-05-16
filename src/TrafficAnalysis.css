@@ -1,0 +1,62 @@
+/* TrafficAnalysis.css */
+
+.traffic-analysis-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-description {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  max-width: 800px;
+  color: #555;
+}
+
+.real-time-density,
+.city-congestion,
+.worst-traffic-areas,
+.historical-trends,
+.peak-hour-analysis {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.graph-container {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.city-congestion p {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.worst-traffic-areas li {
+  background-color: #fff;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

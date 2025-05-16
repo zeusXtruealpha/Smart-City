@@ -1,0 +1,112 @@
+.view-route-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .date-filter {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .date-filter label {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .date-filter input {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .map-frame {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .total-time {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Booked Slots Section */
+  .booked-slots {
+    margin-top: 30px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .booked-slots h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: white;
+    background-color: #2c3e50 ;
+  }
+  
+  .booked-slots table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .booked-slots th, .booked-slots td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .booked-slots th {
+    background-color: #2c3e50; /* Blue background for heading */
+    color: white; /* White text for heading */
+    font-weight: bold;
+  }
+  
+  .booked-slots tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .booked-slots p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  /* Scrollable Table Container */
+  .table-container {
+    max-height: 300px; /* Adjust height as needed */
+    overflow-y: auto; /* Add vertical scrollbar */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+  
+  /* Scrollbar Styling */
+  .table-container::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .table-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+  }
+  
+  .table-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+  
+  .table-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

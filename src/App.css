@@ -1,0 +1,568 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 70px;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2c3e50;
+  padding: 0.8rem 1.5rem;
+  color: white;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4.2rem;
+}
+
+.navbar-links a, .navbar-profile {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 0.4rem 0.8rem;
+  transition: background 0.3s, color 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links a:hover {
+  background: #1abc9c;
+  color: white;
+  border-radius: 5px;
+}
+
+.profile-circle {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #1abc9c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  border: 2px solid white;
+} 
+
+.profile-dropdown {
+  display: none;
+  position: absolute;
+  top: 45px;
+  background: white;
+  color: #333;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 0.8rem;
+  width: 140px;
+}
+
+.navbar-profile:hover .profile-dropdown {
+  display: block;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('/light-city-background.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #2c3e50;
+  color: white;
+  padding: 1rem 0;
+  margin-top: auto;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0.5rem;
+  gap: 1rem;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 150px;
+  margin: 0.5rem;
+}
+
+.footer-section h4 {
+  border-bottom: 2px solid white;
+  padding-bottom: 0.3rem;
+  font-size: 1rem;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  font-size: 0.9rem;
+}
+
+.footer-section ul li {
+  margin: 0.3rem 0;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #1abc9c;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.footer-bottom {
+  margin-top: 0.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* City Events Container */
+.city-events {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Centered Heading */
+.center-heading {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Page Description */
+.page-description {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  max-width: 800px;
+  color: #555;
+}
+
+/* Filters */
+.filters {
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.filters button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #1abc9c;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.filters button:hover {
+  background-color: #16a085;
+}
+
+/* Calendar and Events Container */
+.calendar-events-container {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Calendar Container */
+.calendar-container {
+  width: 400px; /* Fixed width for the calendar */
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd; /* Add border for cleaner look */
+}
+
+/* Calendar Custom Colors */
+.react-calendar {
+  width: 100%;
+  border: none;
+  font-family: 'Arial', sans-serif;
+}
+
+.react-calendar__navigation {
+  background-color: #2c3e50; /* Background color for month/year row */
+  color: white;
+  border-radius: 8px 8px 0 0;
+  padding: 0.5rem;
+}
+
+.react-calendar__navigation button {
+  color: white;
+}
+
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+  background-color: #34495e;
+}
+
+.react-calendar__tile {
+  color: #333;
+}
+
+.react-calendar__tile--active {
+  background: #1abc9c; /* Green background for selected date */
+  color: white;
+  border-radius: 20px; /* Oval shape */
+}
+
+.react-calendar__tile--now {
+  background: #f1c40f; /* Yellow background for current date */
+  color: white;
+  border-radius: 20px; /* Oval shape */
+}
+
+.react-calendar__tile--hasActive {
+  background: #16a085; /* Darker green for selected date with events */
+  color: white;
+  border-radius: 20px; /* Oval shape */
+}
+
+.react-calendar__tile:hover {
+  background: #1abc9c;
+  color: white;
+}
+
+/* Highlight dates with events */
+.has-events {
+  background-color: #e74c3c; /* Red background for dates with events */
+  color: white;
+  border-radius: 20px; /* Oval shape */
+}
+
+/* If a date is both the current date and has events */
+.current-date.has-events {
+  background-color: #e67e22; /* Orange background for both current date and events */
+  color: white;
+  border-radius: 20px; /* Oval shape */
+}
+
+/* If a date is selected and has events */
+.react-calendar__tile--active.has-events {
+  background-color: #16a085; /* Darker green for selected date with events */
+  color: white;
+  border-radius: 20px; /* Oval shape */
+}
+
+/* Monthly Events Section */
+.monthly-events {
+  flex: 1;
+  padding: 1rem;
+  background: #ffffff; /* White background for better contrast */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-height: 500px; /* Fixed height for scrollable area */
+  overflow-y: auto; /* Add scrollbar */
+  border: 1px solid #ddd; /* Add border for cleaner look */
+}
+
+.monthly-events h3 {
+  margin-top: 0;
+  padding: 0.5rem;
+  background-color: #2c3e50; /* Dark blue background for the heading */
+  color: white; /* White text color */
+  border-radius: 8px 8px 0 0; /* Rounded corners at the top */
+  text-align: center; /* Center the text */
+}
+
+/* Scrollable Events */
+.events-scroll {
+  max-height: 400px; /* Fixed height for scrollable area */
+  overflow-y: auto; /* Add scrollbar */
+}
+
+/* Event Details (Full Width) */
+.event-details-full {
+  width: 100%;
+  margin-top: 2rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.event-card {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #ffffff; /* White background for event cards */
+}
+
+.event-card h4 {
+  margin-top: 0;
+  color: #333; /* Dark text color for title */
+}
+
+.event-card p {
+  margin: 0.5rem 0;
+  color: #555; /* Slightly lighter text color for details */
+}
+
+.event-details-full button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #e74c3c;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.event-details-full button:hover {
+  background-color: #c0392b;
+}
+
+/* Add Event Form */
+.add-event-form {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  border: 1px solid #ddd;
+}
+
+.add-event-form h3 {
+  margin-top: 0;
+  padding: 0.5rem;
+  background-color: #2c3e50;
+  color: white;
+  border-radius: 8px 8px 0 0;
+  text-align: center;
+}
+
+.add-event-form .form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.add-event-form .form-grid .full-width {
+  grid-column: span 2;
+}
+
+.add-event-form input,
+.add-event-form textarea,
+.add-event-form select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.add-event-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.add-event-form button {
+  grid-column: span 2;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #1abc9c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: 1rem;
+}
+
+.add-event-form button:hover {
+  background-color: #16a085;
+}
+
+/* Reset form fields after adding event */
+.add-event-form input:focus,
+.add-event-form textarea:focus,
+.add-event-form select:focus {
+  outline: none;
+  border-color: #1abc9c;
+}
+
+/* Events on Selected Date */
+.events-on-date {
+  background-color: #f9f9f9; /* Light gray background for events on selected date */
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  border: 1px solid #ddd;
+}
+
+.events-on-date h3 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+:root {
+  color-scheme: light; /* Force light mode only */
+}
+
+/* Profile Dropdown */
+.profile-dropdown {
+  display: none;
+  position: absolute;
+  top: 64px;
+  right: 5%; /* Align to the right */
+  background: white;
+  color: #333;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 0.8rem;
+  width: 140px;
+  z-index: 1000; /* Ensure it's above other elements */
+}
+
+.navbar-profile:hover .profile-dropdown {
+  display: block;
+}
+
+.profile-dropdown button {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.2rem 0;
+  border: none;
+  background-color: #1abc9c;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.profile-dropdown button:hover {
+  background-color: #16a085;
+}
+
+/* Auth Container */
+.auth-container {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.auth-container h2 {
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.auth-form input {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.auth-form input:focus {
+  border-color: #1abc9c;
+}
+
+.auth-form button {
+  padding: 0.75rem;
+  background-color: #1abc9c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.auth-form button:hover {
+  background-color: #16a085;
+}
+
+.error-message {
+  color: #e74c3c;
+  margin-bottom: 1rem;
+}
+
+.auth-container p {
+  margin-top: 1rem;
+  color: #555;
+}
+
+.auth-container a {
+  color: #1abc9c;
+  text-decoration: none;
+}
+
+.auth-container a:hover {
+  text-decoration: underline;
+}
