@@ -51,7 +51,7 @@ Used to build this:
 
 1. First, clone the repository:
 ```bash
-git clone [your-repository-url]
+git clone https://github.com/zeusXtruealpha/Smart-City--Management
 ```
 
 2. Install the dependencies:
